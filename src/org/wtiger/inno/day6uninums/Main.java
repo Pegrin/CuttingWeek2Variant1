@@ -10,6 +10,5 @@ public class Main {
         Thread ng = new Thread(new NumoGenerator(set));
         ng.setName("Generator");
         ng.start();
-        set.stopIt();
     }
 }
