@@ -10,11 +10,6 @@ public class Main {
         Thread ng = new Thread(new NumoGenerator(set));
         ng.setName("Generator");
         ng.start();
-        try {
-            Thread.sleep(20000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         set.stopIt();
     }
 }
